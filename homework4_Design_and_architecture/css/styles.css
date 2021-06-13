@@ -1,5 +1,7 @@
 :root{
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
 }
 body{
     margin: 0;
@@ -9,10 +11,11 @@ body{
 /*==================HEADER-SECTION=======================*/
 .hero-header-bg{
     background-attachment: fixed;
-    background-image: url(/img/header-bg.jpeg) ;
+    background-image: url(../img/header-bg.jpeg) ;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
+    box-shadow: inset 100vw 20px 0px rgba(0, 0, 0, 0.400);
 }
 .navbar{
     display: flex;
@@ -102,6 +105,7 @@ body{
 .card-box-container{
     padding-top: 52px;
     display: flex;
+    gap: 30px;
     height: 830px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -111,7 +115,6 @@ body{
 }
 .card-box{
     height: fit-content;
-    margin: 0 0.9vw 0.9vw;
     background: #FFFFFF;
     box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.03);
 }
@@ -126,7 +129,7 @@ body{
 .popular-clients-section{
     display: grid;
     background-attachment: fixed;
-    background-image: url(/img/popular_clients_section/popular_clients_bg.png);
+    background-image: url(../img/popular_clients_section/popular_clients_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -218,7 +221,9 @@ body{
 }
 .article-preview .article-preview-img{
     width: 100%;
+    align-self: stretch;
 }
+
 .article-preview .article-desc{
     font-weight: 600;
     font-size: 0.9rem;
@@ -267,12 +272,12 @@ body{
     padding-right: 1em ;
 }
 .article-second-row__first-col .article-desc-box{
-    padding: 0 1em 2.5em 1em;
+    padding: 1em 1em 2.5em 1em;
     align-self: center;
 }
 .article-fifth-row__second-col .article-desc-box{
-    padding: 0 1em 2.5em 1em;
-    align-self: center;
+    padding: 1em 1em 2.5em 1em;
+    align-self:center;
 }
 .thumbnail .thumbnail-header{
     font-size: 1.1rem;
@@ -281,7 +286,18 @@ body{
     margin: 0;
     color: #353A3D;
 }
-
+.thumbnail{
+    display: inherit;
+}
+.thumbnail .thumbnail-img-container{
+    grid-row: 1/3;
+}
+.thumbnail-img-container > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+}
 /*======================== FOOTER-SECTION ================== */
 .footer{
     background-color: #000000;
