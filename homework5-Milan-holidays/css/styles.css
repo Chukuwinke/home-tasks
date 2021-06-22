@@ -6,14 +6,11 @@
 }
 body{
     background-image: url(../img/background_milan.jpg);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
     justify-content: center;
     padding-top: 46px;
-    overflow-x: hidden;
-    width: 100vw;
     font-family: 'Roboto', sans-serif;
 }
 .header-section{
